@@ -164,7 +164,6 @@ data.frame(x=seq(0,50, 0.1)) %>%
   ylab("Model-generated outcome \n BMI prevalence (%)")+xlab("Percentage of initial input assumptions")+
   theme(legend.position = "bottom")+
   ggtitle("Outcome at the time 50")+
-  
 
   plot_layout(ncol=1, nrow=2)+
   plot_annotation(tag_levels = list(c("A", "B")))&
@@ -4157,8 +4156,8 @@ tmp.p1+tmp.p3+tmp.p2+tmp.p4+
 
 
 ```
-## Female body weight including 20-24 and 40-44
 
+## Female body weight including 20-24 and 40-44
 ```{r Body Weight Female for chapter, echo=F, message=F, error=F, warning=F,  fig.width=1.2*6*1.5,fig.height=1*12*1.5}
 tmp.p1<-derivative.lsa %>%
 filter(focus.title=="\"Body Weight (kg)\"" ) %>%
